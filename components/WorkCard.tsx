@@ -1,0 +1,52 @@
+import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
+import { Project } from '../types';
+
+interface WorkCardProps {
+  project: Project;
+}
+
+export const WorkCard: React.FC<WorkCardProps> = ({ project }) => {
+  return (
+    <a
+      href={project.link}
+      className="group break-inside-avoid block rounded-3xl overflow-hidden backdrop-blur-md bg-white/70 border border-white/20 hover:bg-white/80 hover:shadow-2xl hover:shadow-black/10 transition-all duration-300 h-full"
+    >
+      <div className="relative">
+        <img
+          src={project.imageUrl}
+          alt={project.title}
+          className={`w-full object-cover ${
+             // Using different heights based on aspect ratios in original design approximation
+             project.id === '1' ? 'h-64' :
+             project.id === '2' ? 'h-80' :
+             project.id === '3' ? 'h-72' :
+             project.id === '4' ? 'h-96' :
+             project.id === '5' ? 'h-56' :
+             'h-80'
+          }`}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+      </div>
+      <div className="p-6">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <h3 className="text-lg font-semibold text-black mb-1 font-geist">
+              {project.title}
+            </h3>
+            <p className="text-md text-black/60 mb-3 font-geist">
+              {project.description}
+            </p>
+          
+          </div>
+          <div className="shrink-0">
+            <span className="inline-flex items-center gap-1 text-xs text-black/50 group-hover:text-black transition font-geist">
+              View
+              <ArrowUpRight className="h-3 w-3" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+};
