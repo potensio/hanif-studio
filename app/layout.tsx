@@ -75,7 +75,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${GeistSans.variable} h-full bg-white`}
     >
-      <body className="min-h-full max-w-[1536px] mx-auto antialiased selection:bg-black selection:text-white text-black bg-gray-100 font-inter">
+      <body className="min-h-full min-w-[375px] max-w-[1600px] mx-auto antialiased selection:bg-black selection:text-white text-black bg-gray-100 font-inter">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

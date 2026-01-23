@@ -35,10 +35,11 @@ export const Footer: React.FC = () => {
                 className="max-h-20 mb-10"
               />
               <h1 className="text-5xl md:text-7xl font-medium mb-4 tracking-tighter">
-                See if Hanif is the right fit for you{" "}
+                See if I’m a good fit for your product{" "}
               </h1>
               <p className="text-lg sm:text-xl text-black/40 leading-relaxed max-w-3xl font-geist tracking-tighter font-medium">
-                Schedule a quick, 15 minute guided tour through Designjoy.
+                Schedule a quick, 15-minute call to understand your product and
+                how I work.
               </p>
             </div>
 
@@ -124,7 +125,7 @@ export const Footer: React.FC = () => {
               </a>
             </div>
             <p className="text-black/60 text-sm font-geist">
-              © <span className="font-geist">2025</span> Lio. All rights
+              © <span className="font-geist">2025</span> Hanif. All rights
               reserved.
             </p>
           </div>

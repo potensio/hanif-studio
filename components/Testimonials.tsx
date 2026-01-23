@@ -2,51 +2,50 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
     quote:
-      "FlowAI transformed our content strategy. We now generate 10x more content while maintaining quality.",
-    name: "Sarah Chen",
-    role: "Marketing Director, TechFlow",
+      "Finally have my own e-commerce platform! I can't wait for the next phase.",
+    name: "Raihan",
+    role: "Founder, Beli Elektronik",
     image:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&h=200&fit=crop&crop=faces",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop&crop=faces",
     rotation: "-rotate-2",
   },
   {
     quote:
-      "The AI automation saved us 20+ hours weekly. Our content performance increased by 300%.",
-    name: "Marcus Rodriguez",
-    role: "Content Lead, GrowthLab",
+      "He rebuilt our broken CRM and payment system. Everything is now fast and reliable",
+    name: "Marisa",
+    role: "Product Manager, Enterprise SaaS",
     image:
-      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&h=200&fit=crop&crop=faces",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&fit=crop&crop=faces",
     rotation: "rotate-1",
   },
   {
-    quote:
-      "Incredible ROI. FlowAI paid for itself within the first month of implementation.",
-    name: "Emma Thompson",
-    role: "Founder, Digital Ventures",
+    quote: "Easy to work with, highly recommend.",
+    name: "Michael",
+    role: "Founder, My Daily Health Journal",
     image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&fit=crop&crop=faces",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop&crop=faces",
     rotation: "-rotate-1",
   },
   {
-    quote:
-      "From brief to published content in minutes — completely game-changing for our workflow.",
-    name: "Alex Morgan",
-    role: "Creative Director, Apex Studios",
+    quote: "He delivered exactly as we envisioned it.",
+    name: "Sarah Chen",
+    role: "Product Manager, TechFlow",
     image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=200&h=200&fit=crop&crop=faces",
+      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&h=200&fit=crop&crop=faces",
     rotation: "rotate-2",
   },
   {
     quote:
-      "The analytics and multi-channel distribution features are phenomenal. Best investment we made.",
-    name: "Priya Patel",
-    role: "Head of Marketing, InnovateCorp",
+      "Still responsive months after launch. Really appreciate the ongoing support.",
+    name: "Alex Morgan",
+    role: "CTO, Apex Studios",
     image:
-      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=200&h=200&fit=crop&crop=faces",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop&crop=faces",
     rotation: "-rotate-3",
   },
 ];
@@ -81,9 +80,9 @@ export const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="max-w-7xl sm:px-8 mx-auto px-6 py-24 relative z-10">
+    <section className="max-w-7xl sm:px-8 sm:py-24 px-6 py-20 mx-auto">
       {/* Header */}
-      <div className="flex flex-col sm:px-0 gap-x-6 gap-y-2">
+      <div className="flex flex-col gap-y-2">
         <div
           className="flex flex-col justify-between mb-12"
           style={{ animation: "fadeSlideIn 1s ease-out 0.1s both" }}
@@ -98,19 +97,48 @@ export const Testimonials: React.FC = () => {
         </div>
 
         <div
-          className="grid grid-cols-3 gap-x-8 gap-y-12 border-t border-black/10 pt-12"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12 border-t border-black/10 pt-8 sm:pt-12"
           style={{ animation: "fadeSlideIn 1s ease-out 0.3s both" }}
         >
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-medium text-black font-geist tracking-tighter">
-              30 days warranty
+            <Image
+              src="/direct-communication-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Direct communication
             </div>
             <p className="font-medium text-black/40 font-geist">
-              Spend at least $2K and get warranty for 14 days after delivery.
+              No middleman, no outsource, just me.
             </p>
           </div>
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-medium text-black font-geist tracking-tighter">
+            <Image
+              src="/transparent-pricing-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Transparent pricing
+            </div>
+            <p className="font-medium text-black/40 font-geist">
+              Clear estimates upfront, no hidden fees or surprise charges.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Image
+              src="/always-in-the-loop-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
               Always in the loop
             </div>
             <p className="font-medium text-black/40 font-geist">
@@ -118,11 +146,51 @@ export const Testimonials: React.FC = () => {
             </p>
           </div>
           <div className="space-y-2">
-            <div className="text-2xl sm:text-3xl font-medium text-black font-geist tracking-tighter">
-              Direct communication
+            <Image
+              src="/fast-turn-around-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Fast turnaround
             </div>
             <p className="font-medium text-black/40 font-geist">
-              No middleman, no outsource, just me.
+              No bureaucracy, no approval chains. I move quickly from concept to
+              deployment.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Image
+              src="/ownership-ip-clarity-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Ownership & IP clarity
+            </div>
+            <p className="font-medium text-black/40 font-geist">
+              Full code ownership—you own everything I build, no strings
+              attached.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Image
+              src="/post-launch-support-icon.png"
+              height={32}
+              width={32}
+              alt="email icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Post-launch support
+            </div>
+            <p className="font-medium text-black/40 font-geist">
+              I stick around after launch—bug fixes, updates, and guidance when
+              you need it.
             </p>
           </div>
         </div>
@@ -144,13 +212,13 @@ export const Testimonials: React.FC = () => {
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-6 overflow-x-auto scroll-smooth px-4 sm:px-6 absolute top-0 right-0 bottom-0 left-0 items-center hide-scrollbar"
+            className="flex gap-6 overflow-x-auto scroll-smooth px-4 sm:px-6 absolute top-0 right-0 bottom-0 left-0 items-center hide-scrollbar md:pt-10"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {testimonials.map((testimonial, index) => (
               <article
                 key={index}
-                className={`min-w-[320px] sm:min-w-[520px] max-w-[640px] bg-white border border-neutral-200/70 rounded-[24px] p-8 text-neutral-900 transition-transform duration-300 hover:-translate-y-1 shadow-xl ${testimonial.rotation} snap-center`}
+                className={`min-w-[320px] sm:min-w-[520px] max-w-[640px] bg-white border border-neutral-200/70 rounded-[24px] p-6 sm:p-8 text-neutral-900 transition-transform duration-300 hover:-translate-y-1 shadow-xl ${testimonial.rotation} snap-center`}
               >
                 <p className="text-lg sm:text-xl md:text-2xl text-neutral-900 tracking-tighter font-geist font-medium">
                   "{testimonial.quote}"

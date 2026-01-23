@@ -5,6 +5,7 @@ import { FeaturedWork } from "@/components/FeaturedWork";
 import { Capabilities } from "@/components/Capabilities";
 import { Testimonials } from "@/components/Testimonials";
 import { Pricing } from "@/components/Pricing";
+import { FAQ } from "@/components/FAQ";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 
@@ -35,6 +36,7 @@ export default function Home() {
           <section id="pricing">
             <Pricing />
           </section>
+          <FAQ />
         </main>
 
         <Footer />
