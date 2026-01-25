@@ -86,8 +86,8 @@ export const Testimonials: React.FC = () => {
             Why me?
           </h2>
           <p className="text-xl sm:text-2xl text-black/60 leading-relaxed max-w-xl font-geist tracking-tighter font-medium">
-            Think of it as an in-house talent, without hiring, contracts, or
-            agency headaches.
+            Think of it as your in-house talent with AI expertise — no hiring,
+            no contracts, no agency headaches.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export const Testimonials: React.FC = () => {
               src="/direct-communication-icon.png"
               height={32}
               width={32}
-              alt="email icon"
+              alt="direct communication icon"
               className="size-8"
             />
             <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
@@ -112,17 +112,34 @@ export const Testimonials: React.FC = () => {
           </div>
           <div className="space-y-2">
             <Image
-              src="/transparent-pricing-icon.png"
+              src="/ai-workflow-icon.png"
               height={32}
               width={32}
-              alt="email icon"
+              alt="ai icon"
               className="size-8"
             />
             <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
-              Transparent pricing
+              AI-powered workflows
             </div>
             <p className="font-medium text-black/40 font-geist">
-              Clear estimates upfront, no hidden fees or surprise charges.
+              I use modern AI tools in my workflow to deliver high-quality work,
+              faster.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Image
+              src="/fast-turn-around-icon.png"
+              height={32}
+              width={32}
+              alt="fast turnaround icon"
+              className="size-8"
+            />
+            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
+              Fast turnaround
+            </div>
+            <p className="font-medium text-black/40 font-geist">
+              No bureaucracy, no approval chains. I move quickly from concept to
+              implementation.
             </p>
           </div>
           <div className="space-y-2">
@@ -130,7 +147,7 @@ export const Testimonials: React.FC = () => {
               src="/always-in-the-loop-icon.png"
               height={32}
               width={32}
-              alt="email icon"
+              alt="always in the loop icon"
               className="size-8"
             />
             <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
@@ -142,26 +159,10 @@ export const Testimonials: React.FC = () => {
           </div>
           <div className="space-y-2">
             <Image
-              src="/fast-turn-around-icon.png"
-              height={32}
-              width={32}
-              alt="email icon"
-              className="size-8"
-            />
-            <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
-              Fast turnaround
-            </div>
-            <p className="font-medium text-black/40 font-geist">
-              No bureaucracy, no approval chains. I move quickly from concept to
-              deployment.
-            </p>
-          </div>
-          <div className="space-y-2">
-            <Image
               src="/ownership-ip-clarity-icon.png"
               height={32}
               width={32}
-              alt="email icon"
+              alt="ownership clarity icon"
               className="size-8"
             />
             <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">
@@ -177,7 +178,7 @@ export const Testimonials: React.FC = () => {
               src="/post-launch-support-icon.png"
               height={32}
               width={32}
-              alt="email icon"
+              alt="post launch icon"
               className="size-8"
             />
             <div className="text-xl sm:text-2xl font-medium text-black font-geist tracking-tighter">

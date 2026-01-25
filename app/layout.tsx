@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
+  title: "Hanif — Solo Product Engineer Using AI | MVP & SaaS Development",
   description:
-    "Build your MVP with a Jakarta-based full-stack product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
+    "Solo product engineer building with AI — team-level execution without agency overhead. I design, build, and launch MVPs and AI SaaS products end to end.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
   ),
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   keywords: [
-    "build MVP",
+    "solo product engineer",
+    "product engineer using AI",
+    "AI-powered development",
+    "build MVP without agency",
     "MVP development",
     "startup product engineer",
-    "Next.js developer for startup",
     "AI SaaS developer",
-    "hire product engineer",
-    "full-stack developer Jakarta",
+    "Next.js developer for startup",
     "AI integration developer",
-    "product development engineer",
     "end-to-end product development",
     "startup MVP builder",
     "AI-powered web applications",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Hanif" }],
   creator: "Hanif",
   openGraph: {
-    title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
+    title: "Hanif — Solo Product Engineer Using AI | MVP & SaaS Development",
     description:
-      "Build your MVP with a Jakarta-based product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
+      "Solo product engineer building with AI — team-level execution without agency overhead. I design, build, and launch MVPs and AI SaaS products end to end.",
     url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     siteName: "Hanif Portfolio",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Hanif — Full-Stack Product Engineer",
+        alt: "Hanif — Solo Product Engineer Using AI",
       },
     ],
     locale: "en_US",
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
+    title: "Hanif — Solo Product Engineer Using AI | MVP & SaaS Development",
     description:
-      "Build your MVP with a Jakarta-based product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
+      "Solo product engineer building with AI — team-level execution without agency overhead. I design, build, and launch MVPs and AI SaaS products end to end.",
     images: ["/og-image.png"],
     creator: "@hanifyaskur",
   },
@@ -84,7 +84,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Hanif",
-    jobTitle: "Full-Stack Product Engineer",
+    jobTitle: "Solo Product Engineer",
     url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     address: {
       "@type": "PostalAddress",
@@ -97,15 +97,16 @@ export default function RootLayout({
       "https://linkedin.com/in/hanifyaskur",
     ],
     description:
-      "Full-stack Product Engineer based in Jakarta. Specializing in MVP development, AI SaaS applications, and Next.js development for startups.",
+      "Solo product engineer building with AI. Specializing in MVP development, AI SaaS applications, and end-to-end product development for startups.",
     knowsAbout: [
       "MVP Development",
       "AI SaaS Development",
-      "Full-Stack Development",
+      "AI-Powered Development",
       "Next.js Development",
       "Product Engineering",
       "Startup Development",
       "AI Integration",
+      "Solo Development",
     ],
   };
 

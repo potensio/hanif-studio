@@ -97,14 +97,14 @@ export const Footer: React.FC = () => {
               </div>
               <div className="mt-3 flex items-center gap-3 pt-6 border-t border-neutral-900/10 justify-center">
                 <a
-                  href="#"
+                  href="https://x.com/potensi0"
                   aria-label="X"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5 ring-1 ring-black/10 text-black/60 hover:text-black hover:bg-black/10 transition"
                 >
                   <Twitter className="w-[16px] h-[16px]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://id.linkedin.com/in/hanif-yaskur-60485a80"
                   aria-label="LinkedIn"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5 ring-1 ring-black/10 text-black/60 hover:text-black hover:bg-black/10 transition"
                 >
