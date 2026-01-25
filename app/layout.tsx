@@ -114,6 +114,13 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${GeistSans.variable} h-full bg-white`}
     >
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="ba51c818-3c73-4afa-bb39-82e649946178"
+        />
+      </head>
       <body className="min-h-full min-w-[375px] max-w-[1600px] mx-auto antialiased selection:bg-black selection:text-white text-black bg-gray-100 font-inter">
         <script
           type="application/ld+json"
