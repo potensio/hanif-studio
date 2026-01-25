@@ -25,6 +25,7 @@ export const Header: React.FC = () => {
               width={28}
               alt="logo"
               className="h-fit"
+              style={{ width: "auto", height: "auto" }}
             />
           </a>
 

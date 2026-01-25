@@ -7,46 +7,41 @@ import Image from "next/image";
 const testimonials = [
   {
     quote:
-      "Finally have my own e-commerce platform! I can't wait for the next phase.",
-    name: "Raihan",
+      "Still responsive months after launch. Really appreciate the ongoing support.",
+    name: "Michael Knott",
+    role: "Founder, My Daily Health Journal",
+    image: "/client-michael.png",
+    rotation: "rotate-1",
+  },
+  {
+    quote:
+      "Finally have my own e-commerce platform! This app is exactly what I’ve been dreaming of.",
+    name: "Chindra",
     role: "Founder, Beli Elektronik",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop&crop=faces",
+    image: "/client-chindra.png",
     rotation: "-rotate-2",
   },
   {
     quote:
-      "He rebuilt our broken CRM and payment system. Everything is now fast and reliable",
-    name: "Marisa",
-    role: "Product Manager, Enterprise SaaS",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&fit=crop&crop=faces",
+      "He rebuilt our broken CRM and payment system. Our whole team is much happier with the performance.",
+    name: "Elena Rodriguez",
+    role: "CMO, Reachy",
+    image: "/client-elena.png",
     rotation: "rotate-1",
   },
   {
     quote: "Easy to work with, highly recommend.",
-    name: "Michael",
-    role: "Founder, My Daily Health Journal",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop&crop=faces",
+    name: "Ryan Miller",
+    role: "Distribution Digital Lead, Lodgic",
+    image: "/client-ryan.png",
     rotation: "-rotate-1",
   },
   {
-    quote: "He delivered exactly as we envisioned it.",
-    name: "Sarah Chen",
-    role: "Product Manager, TechFlow",
-    image:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&h=200&fit=crop&crop=faces",
+    quote: "Hanif delivered exactly as we envisioned it.",
+    name: "Ashley Vances",
+    role: "Product Manager, Notto",
+    image: "/client-ashley.png",
     rotation: "rotate-2",
-  },
-  {
-    quote:
-      "Still responsive months after launch. Really appreciate the ongoing support.",
-    name: "Alex Morgan",
-    role: "CTO, Apex Studios",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop&crop=faces",
-    rotation: "-rotate-3",
   },
 ];
 

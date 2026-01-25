@@ -14,8 +14,13 @@ export const metadata: Metadata = {
   description:
     "Build your MVP with a Jakarta-based full-stack product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
   ),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
   keywords: [
     "build MVP",
     "MVP development",
@@ -36,7 +41,7 @@ export const metadata: Metadata = {
     title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
     description:
       "Build your MVP with a Jakarta-based product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     siteName: "Hanif Portfolio",
     images: [
       {
@@ -80,7 +85,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Hanif",
     jobTitle: "Full-Stack Product Engineer",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Jakarta",
