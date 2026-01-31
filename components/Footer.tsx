@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { ArrowRight, Twitter, Linkedin } from "lucide-react";
+import { Copy, Check, Twitter, Linkedin } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -81,19 +81,24 @@ export const Footer: React.FC = () => {
                     hanifyaskur@gmail.com
                   </p>
                 </div>
-                <button
-                  onClick={handleCopyEmail}
-                  className="flex shrink-0 items-center justify-center bg-white rounded-full size-8 hover:bg-gray-100 transition-colors active:scale-95 relative"
-                  aria-label="Copy email address"
-                >
-                  {copied ? (
-                    <span className="text-xs font-medium text-green-600">
-                      ✓
-                    </span>
-                  ) : (
-                    <ArrowRight className="size-4" />
+                <div className="relative">
+                  <button
+                    onClick={handleCopyEmail}
+                    className="flex shrink-0 items-center justify-center bg-white rounded-full size-8 hover:bg-gray-100 transition-colors active:scale-95"
+                    aria-label="Copy email address"
+                  >
+                    {copied ? (
+                      <Check className="size-4 text-green-600" />
+                    ) : (
+                      <Copy className="size-4" />
+                    )}
+                  </button>
+                  {copied && (
+                    <div className="absolute -top-10 right-0 bg-green-600 text-white text-sm font-medium px-3 py-1.5 rounded-lg shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-200">
+                      Copied!
+                    </div>
                   )}
-                </button>
+                </div>
               </div>
               <div className="mt-3 flex items-center gap-3 pt-6 border-t border-neutral-900/10 justify-center">
                 <a
